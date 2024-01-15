@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  font-family: "Mulish", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+/* color variables  */
+:root {
+  --orange: #ff5400;
+  --gray: #5a5a5d;
+  --black: #131318;
+  --white: #fff;
+}
+/* ==================== */
+/* global styles  */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.celarfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.heading {
+  color: var(--black);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.Small_desc {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  width: 643px;
+  margin: 2rem auto;
+}
+.btn {
+  padding: 17px 34px;
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  background-color: var(--orange);
+}
+/* =============== */
+/* navbar part start here  */
+header nav {
+  padding: 20px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo img {
+  width: 6rem;
+}
+.logo h3 {
+  color: var(--black);
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.logo h3 span {
+  color: var(--orange);
+}
+
+header nav .main_menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header nav .main_menu li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+header nav .main_menu li .active {
+  color: var(--orange);
+}
+header nav .main_menu li a {
+  color: var(--gray);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+header nav .main_menu li a:hover {
+  color: var(--orange);
+}
+header nav menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header nav menu #bars {
+  font-size: 2rem;
+  margin-left: 10px;
+  border: 1px solid var(--gray);
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* explore part start here  */
+#explore {
+  margin: 5rem 0 3rem 0;
+}
+#explore .exploreWrapper {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../img/hero_banner.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 10rem 3rem;
+  border-radius: 1rem;
+}
+#explore .exploreWrapper h1 {
+  color: #fff;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#explore .exploreWrapper p {
+  color: #fff;
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  width: 70%;
+  margin: 2rem auto;
+}
+#explore .exploreWrapper .find_place {
+  width: 75%;
+  margin: 3rem auto;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+}
+#explore .exploreWrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+#explore .exploreWrapper .form-group input[type="text"],
+select {
+  padding: 16px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  width: 18.5rem;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#explore .exploreWrapper .form-group input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border: none;
+}
+.hero_btn {
+  background: var(--orange);
+}
+
+/* ===========Popular site start============= */
+#popular,
+#parfectPlace {
+  margin: 20px 0;
+  margin-top: 7rem;
+}
+#popular .popularWrapper,
+#parfectPlace .parfectPlaceWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+#popular .img,
+#popular .content {
+  width: 50%;
+}
+
+#popular h2 {
+  color: var(--black);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+#popular p,
+#popular ul li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 10px 0;
+}
+#popular ul {
+  margin-left: 1.6rem;
+}
+#popular .popular_btn {
+  margin-top: 2rem;
+}
+#popular .img img {
+  width: 100%;
+}
+/* Destination part start here  */
+#destination {
+  margin: 7rem 0;
+  position: relative;
+}
+
+#destination .des_top_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+}
+/* #destination .des_top_row .img {
+  position: relative;
+  width: 50%;
+  border-radius: 1.2rem;
+} */
+#destination .des_top_row .img img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background: rgba(19, 19, 24, 0.2);
+  border-radius: 1.2rem;
+}
+.overlay h4 {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+#destination .des_middle_row {
+  display: grid;
+  grid-template-columns: 30% 40% 26%;
+  gap: 2.2rem;
+  margin-top: 2rem;
+}
+.img {
+  position: relative;
+}
+#destination .des_middle_row .img img {
+  width: 100%;
+  height: 100%;
+}
+.des_bottom_row {
+  display: grid;
+  grid-template-columns: 40% 58%;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.des_bottom_row .img img {
+  width: 100%;
+  height: 100%;
+}
+/* why choosen part start here  */
+#whyChoosen .whyChooseOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#whyChoosen .whyChooseOuter .inner_box {
+  width: 50%;
+  flex: 1;
+}
+/* why choosen part end here  */
+/* discount part start hre  */
+#discount {
+  margin: 7rem 0;
+}
+
+.discount_box {
+  background: url("../img/back_1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem 0;
+}
+.discount_details {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 60%;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+}
+.discount_details .info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.discount_details .info p {
+  color: var(--orange);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.discount_details h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 1.5rem 0;
+}
+.discount_details p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+.discount_details h2 {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 2rem 0;
+}
+
+.discount_middle {
+  background: url("../img/Group\ 40.png") no-repeat;
+  justify-content: start;
+}
+
+.seePakagesBtn {
+  width: 100%;
+  text-align: center;
+}
+
+/* perfect palce start hre  */
+#parfectPlaceWrapper .video,
+#parfectPlaceWrapper .content {
+  width: 50%;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+}
+#parfectPlace .content h2 {
+  color: var(--black);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+#parfectPlace p,
+#parfectPlace ul li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 10px 0;
+}
+#parfectPlace ul {
+  margin-left: 1.6rem;
+}
