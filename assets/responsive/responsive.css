@@ -9,7 +9,10 @@
     margin: 6rem 2rem;
   }
   #destination,
-  #discount {
+  #discount,
+  #whyChoosen,
+  #parfectPlace,
+  #contact {
     margin: 7rem 2rem;
   }
 }
@@ -43,6 +46,10 @@
   }
   .discount_details {
     width: 80%;
+  }
+  #popular .popularWrapper,
+  #parfectPlace .parfectPlaceWrapper {
+    flex-direction: column;
   }
 }
 
@@ -104,6 +111,16 @@
   }
   .discount_details .info {
     flex-wrap: wrap;
+  }
+  .rowOne .inner_box,
+  .rowTwo .inner_box {
+    width: 100%;
+  }
+  #whyChoosen .rowOne {
+    flex-direction: column;
+  }
+  #contact .wrapper {
+    flex-direction: column;
   }
 }
 

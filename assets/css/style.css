@@ -463,3 +463,69 @@ select:focus {
 #parfectPlace ul {
   margin-left: 1.6rem;
 }
+
+#contact .wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 6rem 0;
+}
+
+#contact .wrapper .img img {
+  width: 100%;
+}
+
+.contacForm {
+  background: white;
+  border: 1px solid;
+  padding: 2rem;
+}
+.contacForm h5 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.contacForm p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 1rem 0;
+}
+.contacForm {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1.6rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+}
+.btn-subscribe {
+  width: 100%;
+  margin-top: 1rem;
+}
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 5rem;
+  text-align: center;
+}
+.bigFooter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
