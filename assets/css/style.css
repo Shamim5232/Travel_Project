@@ -424,6 +424,7 @@ select:focus {
 
 #discount .discount_box:nth-child(2) {
   background-image: url("../img/Group\ 40.png");
+  background-size: cover;
   justify-content: start;
 }
 
