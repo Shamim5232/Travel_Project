@@ -47,9 +47,8 @@
   .discount_details {
     width: 80%;
   }
-  #popular .popularWrapper,
-  #parfectPlace .parfectPlaceWrapper {
-    flex-direction: column;
+  .bigFooter p {
+    width: 80%;
   }
 }
 
@@ -122,6 +121,9 @@
   #contact .wrapper {
     flex-direction: column;
   }
+  .bigFooter p {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -143,5 +145,12 @@
   }
   .discount_middle {
     padding: 5rem 3rem;
+  }
+  #popular .popularWrapper,
+  #parfectPlace .parfectPlaceWrapper {
+    flex-direction: column;
+  }
+  .bigFooter p {
+    width: 100%;
   }
 }
